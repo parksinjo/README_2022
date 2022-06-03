@@ -296,3 +296,14 @@ PID가 1222인 프로세스의 이름을 출력함
 ***kill***
 
 ***
+
+
+
+
+
+
+***
+***매크로***
+
+***
+[매크로]<https://www.youtube.com/watch?v=wRFEBw02aT8>
