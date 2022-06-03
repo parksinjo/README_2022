@@ -6,21 +6,48 @@
 top, ps, jobs, kill
 매크로 사용방법 (q)
 
-**1) 시간정보** = 현재시간, 컴퓨터 실행시간 (uptime 명령어)
+**TOP**
+
+**top 실행 후 명령어**
+
+shift + p : CPU 사용률 내림차순
+
+shit + m : 메모리 사용률 내림차순
+
+shift + t : 프로세스가 돌아가고 있는 시간 순
+
+k : kill. k 입력 후 PID 번호 작성. signal은 9
+
+f : sort field 선택 화면 -> q 누르면 RES순으로 정렬
+
+a : 메모리 사용량에 따라 정렬
+
+b : Batch 모드로 작동
+
+1 : CPU Core별로 사용량 보여줌
+
 ***
+
+![TOP]()
+<img src="이미지 파일 경로" width=“1920" height=“1080">
+***
+
+
+**1) 시간정보** = 현재시간, 컴퓨터 실행시간 (uptime 명령어)
+
 **2) load average:** 시스템 부하정도를 나타내는
                  1분, 5분, 15분 시스템 부하평균값(EMA)
 
      -  'R'  실행중인 프로세스
      -  'D' 디스크  I/O 처리완료를 기다리는 프로세스
 
-***
+
 
 **3) Task(프로세스) 정보**
  
-***
 
-**4) CPU 사용율 %**
+
+**4) CPU 사용율 % **
  
  - us : user - mode (높은 우선순위 nice 0또는 음수)
  
@@ -38,7 +65,7 @@ top, ps, jobs, kill
  
  - st : 가상 CPU 구동 (Guest OS를 위한 VM 처리)
 
-***
+
 
 **5) MEM 사용율 %**
 
@@ -56,7 +83,7 @@ top, ps, jobs, kill
  * swap : 메모리의 내용을 저장해둘 수 있는 Disk 공간 KB
 
 
-***
+
 
 **6) 프로세스 세부정보**
 
@@ -93,5 +120,6 @@ top, ps, jobs, kill
  * %MEM: 메모리 사용율
 
  * TIME+: 프로그램 실행한시간
-***
+
+
 참고 정보: man top, proc 및 커널 소스, top 소스코드
